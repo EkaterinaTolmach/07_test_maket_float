@@ -1,0 +1,88 @@
+@font-face{
+    font-family: 'Segoe UI';
+    src: url('../fonts/SegoeUI.woff'), url('../fonts/SegoeUI.woff2');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Segoe UI Light';
+    src: url('../fonts/SegoeUI-Light.woff'), url('../fonts/SegoeUI-Light.woff2');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Segoe UI SemiBold';
+    src: url('../fonts/SegoeUI-SemiBold.woff'), url('../fonts/SegoeUI-SemiBold.woff2');
+    font-weight: 400;
+}
+/*-----------------------Начало "Общие стили"------------------------*/
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0;
+}
+button, input {
+    outline: none;
+    border: none;
+}
+body {
+    margin: 0;
+    font-family: 'Open Sans', arial, sans-serif;
+}
+.template-width {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.inline-block {
+    display: inline-block;
+}
+* {
+    /*outline: 1px solid red;*/
+}
+.justify {
+    line-height: 0;
+    font-size: 1px;
+    text-align: justify;
+}
+.justify::after {
+    display: inline-block;
+    content: "";
+    width: 100%;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+    margin-top: -1px;
+    visibility: hidden;
+    overflow: hidden;
+}
+/*-----------------------Конец "Общие стили"------------------------*/
