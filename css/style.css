@@ -57,14 +57,11 @@ button, input {
 }
 body {
     margin: 0;
-    font-family: 'Open Sans', arial, sans-serif;
+    font-family: 'Segoe UI', arial, sans-serif;
 }
 .template-width {
-    max-width: 1024px;
+    max-width: 1170px;
     margin: 0 auto;
-}
-.inline-block {
-    display: inline-block;
 }
 * {
     /*outline: 1px solid red;*/
