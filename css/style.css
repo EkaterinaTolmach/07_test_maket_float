@@ -158,3 +158,25 @@ body {
     display: none;
 }
 /*-----------------------Конец Header------------------------*/
+
+/*---------------------------Начало блока banner---------------------------*/
+.banner {
+    max-width: 1920px;
+    height: 800px;
+    background: url("../img/bckg01.jpg") center center no-repeat;
+}
+.banner__wrap {
+    padding: 250px 0 258px;
+    text-align: center;
+}
+.banner__title {
+    color: #ffffff;
+    font-size: 42px;
+    line-height: 75px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI Light', arial, sans-serif;
+}
+.banner__title span {
+    background-color: rgba(53, 63, 70, 0.85);
+}
+/*---------------------------Конец блока banner---------------------------*/
