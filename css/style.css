@@ -119,12 +119,42 @@ body {
     display: inline-block;
 }
 .top-nav__link {
+    transition: ease-in-out 0.3s;
     opacity: 0.9;
     color: #ffffff;
     font-size: .875rem;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 13px 19px 11px 20px;
+    padding: 6px 18px 6px 19px;
+    position: relative;
+}
+.top-nav__link::after {
+    transition: ease-in-out 0.3s;
+    display: block;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #4bcaff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform:translateX(-50%);
+}
+.top-nav__link:hover {
+    color: #4bcaff;
+}
+.top-nav__link:hover::after {
+    width: 73%;
+}
+.active {
+    color: #4bcaff;
     border: 2px solid #4bcaff;
+}
+.active:hover {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+.active:hover::after {
+    display: none;
 }
 /*-----------------------Конец Header------------------------*/
