@@ -99,9 +99,13 @@ body {
 .header {
     width: 100%;
     background-color: rgba(53, 63, 70, 0.85);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 .header__wrap {
-    padding: 57px 0;
+    padding: 64px 0 59px;
 }
 .header__logo {
     float: left;
@@ -166,17 +170,30 @@ body {
     background: url("../img/bckg01.jpg") center center no-repeat;
 }
 .banner__wrap {
-    padding: 250px 0 258px;
+    padding: 400px 0 258px;
     text-align: center;
 }
 .banner__title {
     color: #ffffff;
     font-size: 42px;
-    line-height: 75px;
+    line-height: 0;
     text-transform: uppercase;
     font-family: 'Segoe UI Light', arial, sans-serif;
+    vertical-align: middle;
 }
 .banner__title span {
     background-color: rgba(53, 63, 70, 0.85);
+    display: inline-block;
+    line-height: 65px;
+    height: 65px;
+    padding: 0 18px;
+    /*vertical-align: middle;*/
+}
+.banner__title span:first-child {
+    margin-bottom: 12px;
 }
 /*---------------------------Конец блока banner---------------------------*/
+
+/*---------------------------Начало блока services---------------------------*/
+
+/*---------------------------Конец блока services---------------------------*/
