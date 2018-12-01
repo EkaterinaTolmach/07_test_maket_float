@@ -522,6 +522,21 @@ body {
 .twitter__link {
     color: #ffffff;
     font-family: "Segoe UI - Semi Bold", arial, sans-serif;
+    position: relative;
+}
+.twitter__link::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    bottom: -4px;
+    left: 0;
+    transition: 0.3s;
+}
+.twitter__link:hover::after {
+    width: 100%;
 }
 /*---------------------------Конец блока twitter---------------------------*/
 
