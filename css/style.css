@@ -482,7 +482,18 @@ body {
     background-color: #4bcaff;
 }
 .twitter__wrap {
-    padding: 69px 0 76px;
+    padding: 69px 0 64px;
+    position: relative;
+}
+.twitter__title::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: 0;
+    width: 28px;
+    height: 22px;
+    background: url('../img/css_sprites.png') -109px -143px;
 }
 .twitter__title {
     color: #ffffff;
@@ -490,6 +501,7 @@ body {
     text-transform: uppercase;
     font-family: 'Segoe UI Light', arial, sans-serif;
     position: relative;
+    margin-bottom: 30px;
 }
 .twitter__title::after {
     display: block;
@@ -512,3 +524,127 @@ body {
     font-family: "Segoe UI - Semi Bold", arial, sans-serif;
 }
 /*---------------------------Конец блока twitter---------------------------*/
+
+/*---------------------------Начало блока who-is---------------------------*/
+.who-is {
+    max-width: 1920px;
+    background: url("../img/bckg02.jpg") center center;
+}
+.who-is__wrap {
+    padding: 89px 0 169px;
+}
+.who-is__title {
+    color: #ffffff;
+    font-family: 'Segoe UI Light', arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 38px;
+}
+.who-is__title::after {
+    display: block;
+    content: "";
+    width: 45px;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.who-is__text {
+
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+}
+.who-is__column:nth-child(2) {
+    float: left;
+    max-width: 48.7%;
+}
+.who-is__column:nth-child(3) {
+    float: right;
+    max-width: 48.7%;
+}
+.who-is__text:first-child {
+    /*float: left;*/
+    margin-bottom: 24px;
+    /*margin-right: 30px;*/
+}
+.who-is__text:nth-child(3) {
+    /*margin-right: 30px;*/
+    /*float: left;*/
+}
+.who-is__text:nth-child(4) {
+    /*float: right;*/
+}
+.who-is__socials-links {
+    margin-top: 33px;
+}
+.socials {
+    line-height: 0;
+    font-size: 1px;
+}
+.socials__item {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    border: 2px solid #ffffff;
+    line-height: normal;
+    position: relative;
+    margin-right: 20px;
+    background-color: transparent;
+    transition: 0.3s;
+}
+.bg-icon_coffee {
+    display: block;
+    width: 31px;
+    height: 24px;
+    background: url('../img/css_sprites.png') -58px -143px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.bg-icon_dribbble {
+    display: block;
+    width: 26px;
+    height: 27px;
+    background: url('../img/css_sprites.png') -200px -10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+}
+.bg-icon_google_plus {
+    display: block;
+    width: 28px;
+    height: 29px;
+    background: url('../img/css_sprites.png') -10px -143px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.bg-icon_twitter {
+    display: block;
+    width: 28px;
+    height: 22px;
+    background: url('../img/css_sprites.png') -109px -143px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.socials__item:hover {
+    box-shadow: 0 0 7px #ffffff;
+}
+/*---------------------------Конец блока who-is---------------------------*/
