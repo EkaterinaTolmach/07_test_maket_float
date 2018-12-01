@@ -282,7 +282,7 @@ body {
     background-color: #ffffff;
 }
 .portfolio__wrap {
-    padding: 69px 0 77px;
+    padding: 69px 0 50px;
 }
 .portfolio__title {
     color: #515f67;
@@ -293,7 +293,7 @@ body {
     float: left;
     /*width: 50%;*/
     text-align: left;
-    margin-right: 476px;
+    margin-right: 40.68%;
 }
 .portfolio__label {
     float: left;
@@ -412,3 +412,61 @@ body {
     display: block;
 }
 /*---------------------------Конец блока portfolio---------------------------*/
+
+/*---------------------------Начало блока default---------------------------*/
+.default {
+    width: 100%;
+    background-color: #515f67;
+}
+.default__wrap {
+    padding: 69px 0 76px;
+}
+.default__title {
+    color: #ffffff;
+    font-family: 'Segoe UI Light', arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+    /*float: left;*/
+    margin-bottom: 39px;
+}
+.default__title::after {
+    display: block;
+    content: "";
+    width: 45px;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.default__descr {
+    max-width: 469px;
+    float: left;
+}
+.default__text {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+}
+.default__text:nth-child(2) {
+    margin-bottom: 23px;
+}
+.default__link {
+    margin-top: 33px;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    border: 2px solid #353f46;
+    color: #353f46;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+.default__video {
+    float: right;
+    margin-top: 11px;
+}
+/*---------------------------Конец блока default---------------------------*/
