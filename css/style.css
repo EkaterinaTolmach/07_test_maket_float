@@ -275,3 +275,140 @@ body {
     line-height: 18px;
 }
 /*---------------------------Конец блока services---------------------------*/
+
+/*---------------------------Начало блока portfolio---------------------------*/
+.portfolio {
+    width: 100%;
+    background-color: #ffffff;
+}
+.portfolio__wrap {
+    padding: 69px 0 77px;
+}
+.portfolio__title {
+    color: #515f67;
+    font-family: 'Segoe UI Light', arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+    float: left;
+    /*width: 50%;*/
+    text-align: left;
+    margin-right: 476px;
+}
+.portfolio__label {
+    float: left;
+    color: #515f67;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 15px 3px 18px;
+    border: 2px solid transparent;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 80px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.portfolio__label:hover {
+    color: #4bcaff;
+    border: 2px solid #4bcaff;
+}
+.portfolio__label--journal {
+    margin-right: 0;
+}
+.portfolio__title::after {
+    display: block;
+    content: "";
+    width: 45px;
+    height: 2px;
+    background-color: #515f67;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.portfolio__radio {
+    display: none;
+}
+.portfolio__radio--all:checked ~ .portfolio__label--all,
+.portfolio__radio--panoramas:checked ~ .portfolio__label--panoramas,
+.portfolio__radio--portraits:checked ~ .portfolio__label--portraits,
+.portfolio__radio--macro:checked ~ .portfolio__label--macro,
+.portfolio__radio--journal:checked ~ .portfolio__label--journal {
+    color: #4bcaff;
+    border: 2px solid #4bcaff;
+}
+.portfolio__tab {
+    margin-right: -30px;
+}
+.portfolio__img {
+    display: block;
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    margin: 0 30px 30px 0;
+}
+.portfolio__img::before {
+    transition: 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 270px;
+    height: 270px;
+    color: #ffffff;
+    font-size: 72px;
+    font-family: 'Segoe UI Light', arial, sans-serif;
+    content: "";
+    background: rgb(81, 95, 103) url("../img/ico_plus.png") center center no-repeat;
+    opacity: 0;
+    /*z-index: 100;*/
+}
+.portfolio__img:hover::before {
+    opacity: 0.9;
+}
+
+.portfolio__img--holder::after {
+    display: block;
+    content: "";
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*background-color: rgba(151, 151, 151, 0.5);*/
+    background-color: rgba(125, 125, 125, 0.5);
+}
+.portfolio__img:hover::after {
+     display: none;
+ }
+
+.all-tab,
+.panoramas-tab,
+.portraits-tab,
+.macro-tab,
+.journal-tab {
+    display: none;
+}
+.portfolio__radio--all:checked ~.all-tab {
+    display: block;
+}
+.portfolio__radio--panoramas:checked ~.panoramas-tab {
+    display: block;
+}
+.portfolio__radio--portraits:checked ~.portraits-tab {
+    display: block;
+}
+.portfolio__radio--macro:checked ~.macro-tab {
+    display: block;
+}
+.portfolio__radio--journal:checked ~.journal-tab {
+    display: block;
+}
+/*---------------------------Конец блока portfolio---------------------------*/
