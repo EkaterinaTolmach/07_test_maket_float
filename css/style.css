@@ -99,7 +99,7 @@ body {
 .header {
     width: 100%;
     background-color: rgba(53, 63, 70, 0.85);
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
@@ -184,7 +184,7 @@ body {
 .banner__title span {
     background-color: rgba(53, 63, 70, 0.85);
     display: inline-block;
-    line-height: 65px;
+    line-height: 60px;
     height: 65px;
     padding: 0 18px;
     /*vertical-align: middle;*/
@@ -195,5 +195,83 @@ body {
 /*---------------------------Конец блока banner---------------------------*/
 
 /*---------------------------Начало блока services---------------------------*/
+.services {
+    width: 100%;
+    background-color: #4bcaff;
+}
+.services__wrap {
+    padding: 69px 0 77px;
+    color: #ffffff;
+}
+.services__title {
+    font-size: 30px;
+    font-family: 'Segoe UI Light', arial, sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 44px;
+}
+.services__title::after {
+    display: block;
+    content: "";
+    width: 45px;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.service__item {
+    width: 260px;
+    float: left;
+}
+.service__item:first-child {
+    margin-right: 40px;
+}
+.service__item:nth-child(2) {
+    margin-right: 36px;
+}
+.service__item:nth-child(3) {
+    margin-right: 43px;
+}
+.service__item:last-child {
+    margin-right: 0;
+}
+.bg-ico_coffee {
+    width: 34px;
+    height: 48px;
+    background: url('../img/css_sprites.png') -146px -10px;
+}
+.bg-ico_dslr {
+    width: 47px;
+    height: 48px;
+    background: url('../img/css_sprites.png') -10px -78px;
+}
+.bg-ico_frame {
+    width: 48px;
+    height: 48px;
+    background: url('../img/css_sprites.png') -10px -10px;
+}
 
+.bg-ico_instant {
+    width: 48px;
+    height: 48px;
+    background: url('../img/css_sprites.png') -78px -10px;
+}
+.service__icon {
+    margin-bottom: 20px;
+}
+.service__subtitle {
+    color: #ffffff;
+    font-family: "Segoe UI - Semi Bold", arial, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+.service__descr {
+    color: #ffffff;
+    /*font-family: "Segoe UI - Semi Bold", arial, sans-serif;*/
+    font-size: 12px;
+    line-height: 18px;
+}
 /*---------------------------Конец блока services---------------------------*/
