@@ -464,9 +464,51 @@ body {
     font-weight: 700;
     line-height: 44px;
     text-transform: uppercase;
+    transition: 0.3s;
+}
+.default__link:hover {
+    color: #ffffff;
+    border: 2px solid #ffffff;
 }
 .default__video {
     float: right;
     margin-top: 11px;
 }
 /*---------------------------Конец блока default---------------------------*/
+
+/*---------------------------Начало блока twitter---------------------------*/
+.twitter {
+    width: 100%;
+    background-color: #4bcaff;
+}
+.twitter__wrap {
+    padding: 69px 0 76px;
+}
+.twitter__title {
+    color: #ffffff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI Light', arial, sans-serif;
+    position: relative;
+}
+.twitter__title::after {
+    display: block;
+    content: "";
+    width: 45px;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.twitter__text {
+    color: #ffffff;
+    font-size: 28px;
+    font-family: 'Segoe UI Light', arial, sans-serif;
+    line-height: 50px;
+}
+.twitter__link {
+    color: #ffffff;
+    font-family: "Segoe UI - Semi Bold", arial, sans-serif;
+}
+/*---------------------------Конец блока twitter---------------------------*/
