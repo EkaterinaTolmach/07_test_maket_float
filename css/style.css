@@ -367,10 +367,10 @@ body {
     content: "";
     background: rgb(81, 95, 103) url("../img/ico_plus.png") center center no-repeat;
     opacity: 0;
-    /*z-index: 100;*/
 }
 .portfolio__img:hover::before {
     opacity: 0.9;
+    z-index: 200;
 }
 
 .portfolio__img--holder::after {
@@ -384,10 +384,11 @@ body {
     right: 0;
     /*background-color: rgba(151, 151, 151, 0.5);*/
     background-color: rgba(125, 125, 125, 0.5);
+
 }
-.portfolio__img:hover::after {
-     display: none;
- }
+/*.portfolio__img:hover::after {*/
+     /*z-index: -100;*/
+ /*}*/
 
 .all-tab,
 .panoramas-tab,
