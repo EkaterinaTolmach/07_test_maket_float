@@ -717,3 +717,94 @@ body {
     font-weight: 700;
 }
 /*---------------------------Конец блока testimonials---------------------------*/
+
+/*---------------------------Начало блока contacts---------------------------*/
+.contacts {
+    max-width: 1920px;
+    background: url("../img/bckg03.jpg") center center no-repeat;
+}
+.contacts_wrap {
+    padding: 69px 0 80px;
+}
+.contacts__title {
+    color: #ffffff;
+    font-family: 'Segoe UI Light', arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    position: relative;
+}
+.contacts__title::after {
+    display: block;
+    content: "";
+    width: 45px;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.contacts__row {
+    width: 100%;
+}
+.contacts__info {
+    margin-top: 17px;
+}
+.contacts__info,
+.contacts__address {
+    width: 569px;
+    color: #ffffff;
+    /*font-family: "Segoe UI - Semi Bold";*/
+    font-size: 14px;
+    line-height: 24px;
+    float: right;
+}
+.contacts__name,
+.contacts__email {
+    float: left;
+    margin-bottom: 35px;
+}
+.contacts__label {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 6px;
+}
+.contacts__field-name,
+.contacts__field-email {
+    width: 470px;
+    height: 60px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-left: 15px;
+}
+.contacts__message {
+    width: 100%;
+}
+.contacts__field-message {
+    width: 100%;
+    height: 220px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', arial, sans-serif;
+    padding: 15px;
+}
+.contacts__submit {
+    width: 370px;
+    height: 60px;
+    background-color: #4bcaff;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 38px;
+}
+/*---------------------------Конец блока contacts---------------------------*/
