@@ -1061,10 +1061,10 @@ body {
         padding-bottom: 30px;
         text-align: center;
     }
-    .section__title {
+    .section-title {
         text-align: center;
     }
-    .section__title::after {
+    .section-title::after {
         display: none;
     }
 }
