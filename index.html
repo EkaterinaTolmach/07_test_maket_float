@@ -355,7 +355,7 @@
                         </div>
                         <div class="contacts__name">
                             <label for="full-name" class="contacts__label">Full name</label>
-                            <input form="contact-form" id="full-name" class="contacts__field-name" type="text" name="full-name">
+                            <input form="contact-form" id="full-name" class="contacts__field-name" type="text" name="full-name" pattern="\D [^0-9]" required>
                         </div>
                     </div>
                     <div class="contacts__row clear-fix">
@@ -367,7 +367,7 @@
                         </div>
                         <div class="contacts__email">
                             <label for="email" class="contacts__label">Email</label>
-                            <input form="contact-form" id="email" class="contacts__field-email" type="text" name="email">
+                            <input form="contact-form" id="email" class="contacts__field-email" type="email" name="email" required>
                         </div>
                     </div>
                     <div class="contacts__message">
