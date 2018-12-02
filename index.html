@@ -329,28 +329,36 @@
         <section class="contacts">
             <div class="contacts_wrap template-width">
                 <h2 class="contacts__title">Contact</h2>
-                <form name="contact" class="contacts__form" method="post" action="#" enctype="text/plain">
-                    <div class="contacts__full-name">
+                <form id="contact-form" name="contact" class="contacts__form" method="post" action="#" enctype="text/plain">
+                    <div class="contacts__row clear-fix">
                         <div class="contacts__info">
                             Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar.
                             Sweet lollipop halvah tootsie roll cake fruitcake.
                             Chocolate cake chocolate bar gingerbread lollipop tart.
                             Jujubes bear claw donut chupa chups.
                         </div>
-                        <input class="contacts__field-name" title="full name" type="text" name="full-name">
+                        <div class="contacts__name">
+                            <label for="full-name" class="contacts__label">Full name</label>
+                            <input form="contact-form" id="full-name" class="contacts__field-name" type="text" name="full-name">
+                        </div>
                     </div>
-                    <div class="contacts__email">
-                        <div class="contacts__info">
+                    <div class="contacts__row clear-fix">
+                        <div class="contacts__address">
                             Linda Newman<br>
                             W325 State Road 123<br>
                             Mondovi, WI(Wisconsin) 98746-54321<br>
                             (715) 946 - 1234
                         </div>
-                        <input class="contacts__field-email" title="email" type="text" name="email">
+                        <div class="contacts__email">
+                            <label for="email" class="contacts__label">Email</label>
+                            <input form="contact-form" id="email" class="contacts__field-email" type="text" name="email">
+                        </div>
                     </div>
-                    <textarea name="contacts_message" class="contacts__field-message" title="message">
-                    </textarea>
-                    <button type="submit">Message</button>
+                    <div class="contacts__message">
+                        <label class="contacts__label">Message</label>
+                        <textarea form="contact-form" name="contacts_message" class="contacts__field-message" title="message"></textarea>
+                    </div>
+                    <button class="contacts__submit" form="contact-form" type="submit">Message</button>
                 </form>
             </div>
         </section>
