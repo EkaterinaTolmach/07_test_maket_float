@@ -782,11 +782,20 @@ body {
     font-size: 1rem;
     font-weight: 700;
     padding-left: 15px;
+    transition: 0.3s;
 }
+.contacts__field-name:focus,
+.contacts__field-email:focus,
+.contacts__field-message:focus {
+    border: 2px solid #4bcaff;
+    box-shadow: 0 0 7px #4bcaff;
+}
+
 .contacts__message {
     width: 100%;
 }
 .contacts__field-message {
+    transition: 0.3s;
     width: 100%;
     height: 220px;
     color: #ffffff;
