@@ -37,7 +37,7 @@
     </header>
     <main>
         <h1 class="visually-hidden">Float task</h1>
-        <section class="banner">
+        <section id="home" class="banner">
             <div class="banner__wrap template-width">
                 <h2 class="banner__title">
                     <span>“I’m looking for the unexpected.</span><br>
@@ -45,7 +45,7 @@
                 </h2>
             </div>
         </section>
-        <section class="services">
+        <section id="services" class="services">
             <div class="services__wrap template-width clear-fix">
                 <h2 class="services__title">Services</h2>
                 <div class="services__items">
@@ -92,7 +92,7 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
             <div class="portfolio__wrap template-width clear-fix">
                 <h2 class="portfolio__title clear-fix">Portfolio</h2>
                 <input id="tab-all" class="portfolio__radio portfolio__radio--all" checked="checked" type="radio" name="tab">
@@ -326,7 +326,7 @@
                 </div>
             </div>
         </section>
-        <section class="contacts">
+        <section id="contacts" class="contacts">
             <div class="contacts_wrap template-width">
                 <h2 class="contacts__title">Contact</h2>
                 <form id="contact-form" name="contact" class="contacts__form" method="post" action="#" enctype="text/plain">
@@ -363,5 +363,28 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer__wrap template-width clear-fix">
+            <nav class="footer__nav">
+                <ul class="bottom-nav">
+                    <li class="bottom-nav__item">
+                        <a href="#home" class="bottom-nav__link bottom-nav__link--first">Home</a>
+                    </li>
+                    <li class="bottom-nav__item">
+                        <a href="#services" class="bottom-nav__link">Services</a>
+                    </li>
+                    <li class="bottom-nav__item">
+                        <a href="#portfolio" class="bottom-nav__link">Portfolio</a>
+                    </li>
+                    <li class="bottom-nav__item">
+                        <a href="#contacts" class="bottom-nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__copyright">
+                2013 &copy;
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
