@@ -500,6 +500,9 @@ body {
     text-transform: uppercase;
     margin-top: 38px;
 }
+.portfolio__more-brn:hover {
+    box-shadow: 0 0 7px #ffffff;
+}
 /*---------------------------Конец блока portfolio---------------------------*/
 
 /*---------------------------Начало блока default---------------------------*/
@@ -866,6 +869,10 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 38px;
+    transition: 0.3s;
+}
+.contacts__submit:hover {
+    box-shadow: 0 0 7px #ffffff;
 }
 /*---------------------------Конец блока contacts---------------------------*/
 
@@ -1035,6 +1042,7 @@ body {
     .contacts__submit {
         margin: 0 auto;
     }
+
 }
 @media all and (max-width: 771px) {
     .banner__wrap {
