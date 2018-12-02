@@ -175,7 +175,7 @@ body {
 }
 .banner__title {
     color: #ffffff;
-    font-size: 42px;
+    font-size: 2.625rem;
     line-height: 0;
     text-transform: uppercase;
     font-family: 'Segoe UI Light', arial, sans-serif;
@@ -204,7 +204,7 @@ body {
     color: #ffffff;
 }
 .services__title {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-family: 'Segoe UI Light', arial, sans-serif;
     text-transform: uppercase;
     position: relative;
@@ -263,7 +263,7 @@ body {
 .service__subtitle {
     color: #ffffff;
     font-family: "Segoe UI SemiBold", arial, sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 24px;
     text-transform: uppercase;
     margin-bottom: 11px;
@@ -271,7 +271,7 @@ body {
 .service__descr {
     color: #ffffff;
     /*font-family: "Segoe UI - Semi Bold", arial, sans-serif;*/
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 18px;
 }
 /*---------------------------Конец блока services---------------------------*/
@@ -287,7 +287,7 @@ body {
 .portfolio__title {
     color: #515f67;
     font-family: 'Segoe UI Light', arial, sans-serif;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-transform: uppercase;
     position: relative;
     float: left;
@@ -299,7 +299,7 @@ body {
     float: left;
     color: #515f67;
     display: block;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
     text-transform: uppercase;
     padding: 4px 15px 3px 18px;
@@ -362,7 +362,7 @@ body {
     width: 270px;
     height: 270px;
     color: #ffffff;
-    font-size: 72px;
+    font-size: 4.5rem;
     font-family: 'Segoe UI Light', arial, sans-serif;
     content: "";
     background: rgb(81, 95, 103) url("../img/ico_plus.png") center center no-repeat;
@@ -425,7 +425,7 @@ body {
 .default__title {
     color: #ffffff;
     font-family: 'Segoe UI Light', arial, sans-serif;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-transform: uppercase;
     position: relative;
     /*float: left;*/
@@ -447,7 +447,7 @@ body {
 }
 .default__text {
     color: #ffffff;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 24px;
 }
 .default__text:nth-child(2) {
@@ -460,7 +460,7 @@ body {
     height: 45px;
     border: 2px solid #353f46;
     color: #353f46;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-align: center;
     font-weight: 700;
     line-height: 43px;
@@ -498,7 +498,7 @@ body {
 }
 .twitter__title {
     color: #ffffff;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-transform: uppercase;
     font-family: 'Segoe UI Light', arial, sans-serif;
     position: relative;
@@ -516,7 +516,7 @@ body {
 }
 .twitter__text {
     color: #ffffff;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-family: 'Segoe UI Light', arial, sans-serif;
     line-height: 50px;
 }
@@ -552,7 +552,7 @@ body {
 .who-is__title {
     color: #ffffff;
     font-family: 'Segoe UI Light', arial, sans-serif;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-transform: uppercase;
     position: relative;
     margin-bottom: 38px;
@@ -570,7 +570,7 @@ body {
 .who-is__text {
 
     color: #ffffff;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 24px;
 }
 .who-is__column:nth-child(2) {
@@ -598,7 +598,7 @@ body {
 }
 .socials {
     line-height: 0;
-    font-size: 1px;
+    font-size: 0.0625rem;
 }
 .socials__item {
     display: inline-block;
@@ -679,7 +679,7 @@ body {
 .testimonials__title {
     color: #515f67;
     font-family: 'Segoe UI Light', arial, sans-serif;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-transform: uppercase;
     position: relative;
     margin-bottom: 29px;
@@ -706,14 +706,14 @@ body {
 }
 .testimonials__text {
     color: #515f67;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-family: 'Segoe UI Light', arial, sans-serif;
     line-height: 50px;
 }
 .testimonials__author {
     margin-top: 27px;
     color: #4bcaff;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
 }
 /*---------------------------Конец блока testimonials---------------------------*/
@@ -729,7 +729,7 @@ body {
 .contacts__title {
     color: #ffffff;
     font-family: 'Segoe UI Light', arial, sans-serif;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-transform: uppercase;
     margin-bottom: 40px;
     position: relative;
@@ -755,7 +755,7 @@ body {
     width: 569px;
     color: #ffffff;
     /*font-family: "Segoe UI - Semi Bold";*/
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 24px;
     float: right;
 }
@@ -766,7 +766,7 @@ body {
 }
 .contacts__label {
     color: #ffffff;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
     text-transform: uppercase;
     display: block;
@@ -820,7 +820,7 @@ body {
     height: 60px;
     background-color: #4bcaff;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 38px;
@@ -840,7 +840,7 @@ body {
 .footer__nav {
     float: left;
     line-height: 0;
-    font-size: 1px;
+    font-size: 0.0625rem;
 }
 .bottom-nav__item {
     display: inline-block;
