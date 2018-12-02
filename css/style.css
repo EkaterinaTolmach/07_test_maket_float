@@ -463,7 +463,7 @@ body {
     font-size: 14px;
     text-align: center;
     font-weight: 700;
-    line-height: 44px;
+    line-height: 43px;
     text-transform: uppercase;
     transition: 0.3s;
 }
@@ -790,7 +790,16 @@ body {
     border: 2px solid #4bcaff;
     box-shadow: 0 0 7px #4bcaff;
 }
-
+.contacts__field-name:hover,
+.contacts__field-email:hover,
+.contacts__field-message:hover {
+    box-shadow: 0 0 7px #ffffff;
+}
+.contacts__field-name:focus:hover,
+.contacts__field-email:focus:hover,
+.contacts__field-message:focus:hover {
+    box-shadow: 0 0 7px #4bcaff;
+}
 .contacts__message {
     width: 100%;
 }
