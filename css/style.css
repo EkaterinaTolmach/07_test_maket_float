@@ -57,14 +57,11 @@ button, input {
 }
 body {
     margin: 0;
-    font-family: 'Open Sans', arial, sans-serif;
+    font-family: 'Segoe UI', arial, sans-serif;
 }
 .template-width {
-    max-width: 1024px;
+    max-width: 1170px;
     margin: 0 auto;
-}
-.inline-block {
-    display: inline-block;
 }
 * {
     /*outline: 1px solid red;*/
@@ -85,4 +82,729 @@ body {
     visibility: hidden;
     overflow: hidden;
 }
+.clear-fix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', arial, sans-serif;
+    background-color: #353f46;
+    font-size: 16px;
+}
 /*-----------------------Конец "Общие стили"------------------------*/
+
+/*-----------------------Начало Header------------------------*/
+.header {
+    width: 100%;
+    background-color: rgba(53, 63, 70, 0.85);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.header__wrap {
+    padding: 64px 0 59px;
+}
+.header__logo {
+    float: left;
+}
+.header__logo-link {
+    display: inline-block;
+    width: 127px;
+    height: 23px;
+    background: url("../img/logo.png") center center no-repeat;
+}
+.header__top-nav {
+    float: right;
+}
+.top-nav__item {
+    display: inline-block;
+}
+.top-nav__link {
+    transition: ease-in-out 0.3s;
+    opacity: 0.9;
+    color: #ffffff;
+    font-size: .875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 6px 18px 6px 19px;
+    position: relative;
+}
+.top-nav__link::after {
+    transition: ease-in-out 0.3s;
+    display: block;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #4bcaff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform:translateX(-50%);
+}
+.top-nav__link:hover {
+    color: #4bcaff;
+}
+.top-nav__link:hover::after {
+    width: 73%;
+}
+.active {
+    color: #4bcaff;
+    border: 2px solid #4bcaff;
+}
+.active:hover {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+.active:hover::after {
+    display: none;
+}
+/*-----------------------Конец Header------------------------*/
+
+/*---------------------------Начало блока banner---------------------------*/
+.banner {
+    max-width: 1920px;
+    height: 800px;
+    background: url("../img/bckg01.jpg") center center no-repeat;
+}
+.banner__wrap {
+    padding: 400px 0 258px;
+    text-align: center;
+}
+.banner__title {
+    color: #ffffff;
+    font-size: 42px;
+    line-height: 0;
+    text-transform: uppercase;
+    font-family: 'Segoe UI Light', arial, sans-serif;
+    vertical-align: middle;
+}
+.banner__title span {
+    background-color: rgba(53, 63, 70, 0.85);
+    display: inline-block;
+    line-height: 60px;
+    height: 65px;
+    padding: 0 18px;
+    /*vertical-align: middle;*/
+}
+.banner__title span:first-child {
+    margin-bottom: 12px;
+}
+/*---------------------------Конец блока banner---------------------------*/
+
+/*---------------------------Начало блока services---------------------------*/
+.services {
+    width: 100%;
+    background-color: #4bcaff;
+}
+.services__wrap {
+    padding: 69px 0 77px;
+    color: #ffffff;
+}
+.services__title {
+    font-size: 30px;
+    font-family: 'Segoe UI Light', arial, sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 44px;
+}
+.services__title::after {
+    display: block;
+    content: "";
+    width: 45px;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.service__item {
+    width: 260px;
+    float: left;
+}
+.service__item:first-child {
+    margin-right: 40px;
+}
+.service__item:nth-child(2) {
+    margin-right: 36px;
+}
+.service__item:nth-child(3) {
+    margin-right: 43px;
+}
+.service__item:last-child {
+    margin-right: 0;
+}
+.bg-ico_coffee {
+    width: 34px;
+    height: 48px;
+    background: url('../img/css_sprites.png') -146px -10px;
+}
+.bg-ico_dslr {
+    width: 47px;
+    height: 48px;
+    background: url('../img/css_sprites.png') -10px -78px;
+}
+.bg-ico_frame {
+    width: 48px;
+    height: 48px;
+    background: url('../img/css_sprites.png') -10px -10px;
+}
+
+.bg-ico_instant {
+    width: 48px;
+    height: 48px;
+    background: url('../img/css_sprites.png') -78px -10px;
+}
+.service__icon {
+    margin-bottom: 20px;
+}
+.service__subtitle {
+    color: #ffffff;
+    font-family: "Segoe UI - Semi Bold", arial, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+.service__descr {
+    color: #ffffff;
+    /*font-family: "Segoe UI - Semi Bold", arial, sans-serif;*/
+    font-size: 12px;
+    line-height: 18px;
+}
+/*---------------------------Конец блока services---------------------------*/
+
+/*---------------------------Начало блока portfolio---------------------------*/
+.portfolio {
+    width: 100%;
+    background-color: #ffffff;
+}
+.portfolio__wrap {
+    padding: 69px 0 50px;
+}
+.portfolio__title {
+    color: #515f67;
+    font-family: 'Segoe UI Light', arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+    float: left;
+    /*width: 50%;*/
+    text-align: left;
+    margin-right: 40.68%;
+}
+.portfolio__label {
+    float: left;
+    color: #515f67;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 15px 3px 18px;
+    border: 2px solid transparent;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 80px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.portfolio__label:hover {
+    color: #4bcaff;
+    border: 2px solid #4bcaff;
+}
+.portfolio__label--journal {
+    margin-right: 0;
+}
+.portfolio__title::after {
+    display: block;
+    content: "";
+    width: 45px;
+    height: 2px;
+    background-color: #515f67;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.portfolio__radio {
+    display: none;
+}
+.portfolio__radio--all:checked ~ .portfolio__label--all,
+.portfolio__radio--panoramas:checked ~ .portfolio__label--panoramas,
+.portfolio__radio--portraits:checked ~ .portfolio__label--portraits,
+.portfolio__radio--macro:checked ~ .portfolio__label--macro,
+.portfolio__radio--journal:checked ~ .portfolio__label--journal {
+    color: #4bcaff;
+    border: 2px solid #4bcaff;
+}
+.portfolio__tab {
+    margin-right: -30px;
+}
+.portfolio__img {
+    display: block;
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    margin: 0 30px 30px 0;
+}
+.portfolio__img::before {
+    transition: 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 270px;
+    height: 270px;
+    color: #ffffff;
+    font-size: 72px;
+    font-family: 'Segoe UI Light', arial, sans-serif;
+    content: "";
+    background: rgb(81, 95, 103) url("../img/ico_plus.png") center center no-repeat;
+    opacity: 0;
+}
+.portfolio__img:hover::before {
+    opacity: 0.9;
+    z-index: 200;
+}
+
+.portfolio__img--holder::after {
+    display: block;
+    content: "";
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*background-color: rgba(151, 151, 151, 0.5);*/
+    background-color: rgba(125, 125, 125, 0.5);
+
+}
+/*.portfolio__img:hover::after {*/
+     /*z-index: -100;*/
+ /*}*/
+
+.all-tab,
+.panoramas-tab,
+.portraits-tab,
+.macro-tab,
+.journal-tab {
+    display: none;
+}
+.portfolio__radio--all:checked ~.all-tab {
+    display: block;
+}
+.portfolio__radio--panoramas:checked ~.panoramas-tab {
+    display: block;
+}
+.portfolio__radio--portraits:checked ~.portraits-tab {
+    display: block;
+}
+.portfolio__radio--macro:checked ~.macro-tab {
+    display: block;
+}
+.portfolio__radio--journal:checked ~.journal-tab {
+    display: block;
+}
+/*---------------------------Конец блока portfolio---------------------------*/
+
+/*---------------------------Начало блока default---------------------------*/
+.default {
+    width: 100%;
+    background-color: #515f67;
+}
+.default__wrap {
+    padding: 69px 0 76px;
+}
+.default__title {
+    color: #ffffff;
+    font-family: 'Segoe UI Light', arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+    /*float: left;*/
+    margin-bottom: 39px;
+}
+.default__title::after {
+    display: block;
+    content: "";
+    width: 45px;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.default__descr {
+    max-width: 469px;
+    float: left;
+}
+.default__text {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+}
+.default__text:nth-child(2) {
+    margin-bottom: 23px;
+}
+.default__link {
+    margin-top: 33px;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    border: 2px solid #353f46;
+    color: #353f46;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 44px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.default__link:hover {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+.default__video {
+    float: right;
+    margin-top: 11px;
+}
+/*---------------------------Конец блока default---------------------------*/
+
+/*---------------------------Начало блока twitter---------------------------*/
+.twitter {
+    width: 100%;
+    background-color: #4bcaff;
+}
+.twitter__wrap {
+    padding: 69px 0 64px;
+    position: relative;
+}
+.twitter__title::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: 0;
+    width: 28px;
+    height: 22px;
+    background: url('../img/css_sprites.png') -109px -143px;
+}
+.twitter__title {
+    color: #ffffff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI Light', arial, sans-serif;
+    position: relative;
+    margin-bottom: 30px;
+}
+.twitter__title::after {
+    display: block;
+    content: "";
+    width: 45px;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.twitter__text {
+    color: #ffffff;
+    font-size: 28px;
+    font-family: 'Segoe UI Light', arial, sans-serif;
+    line-height: 50px;
+}
+.twitter__link {
+    color: #ffffff;
+    font-family: "Segoe UI - Semi Bold", arial, sans-serif;
+    position: relative;
+}
+.twitter__link::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    bottom: -4px;
+    left: 0;
+    transition: 0.3s;
+}
+.twitter__link:hover::after {
+    width: 100%;
+}
+/*---------------------------Конец блока twitter---------------------------*/
+
+/*---------------------------Начало блока who-is---------------------------*/
+.who-is {
+    max-width: 1920px;
+    background: url("../img/bckg02.jpg") center center;
+}
+.who-is__wrap {
+    padding: 89px 0 169px;
+}
+.who-is__title {
+    color: #ffffff;
+    font-family: 'Segoe UI Light', arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 38px;
+}
+.who-is__title::after {
+    display: block;
+    content: "";
+    width: 45px;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.who-is__text {
+
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+}
+.who-is__column:nth-child(2) {
+    float: left;
+    max-width: 48.7%;
+}
+.who-is__column:nth-child(3) {
+    float: right;
+    max-width: 48.7%;
+}
+.who-is__text:first-child {
+    /*float: left;*/
+    margin-bottom: 24px;
+    /*margin-right: 30px;*/
+}
+.who-is__text:nth-child(3) {
+    /*margin-right: 30px;*/
+    /*float: left;*/
+}
+.who-is__text:nth-child(4) {
+    /*float: right;*/
+}
+.who-is__socials-links {
+    margin-top: 33px;
+}
+.socials {
+    line-height: 0;
+    font-size: 1px;
+}
+.socials__item {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    border: 2px solid #ffffff;
+    line-height: normal;
+    position: relative;
+    margin-right: 20px;
+    background-color: transparent;
+    transition: 0.3s;
+}
+.bg-icon_coffee {
+    display: block;
+    width: 31px;
+    height: 24px;
+    background: url('../img/css_sprites.png') -58px -143px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.bg-icon_dribbble {
+    display: block;
+    width: 26px;
+    height: 27px;
+    background: url('../img/css_sprites.png') -200px -10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+}
+.bg-icon_google_plus {
+    display: block;
+    width: 28px;
+    height: 29px;
+    background: url('../img/css_sprites.png') -10px -143px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.bg-icon_twitter {
+    display: block;
+    width: 28px;
+    height: 22px;
+    background: url('../img/css_sprites.png') -109px -143px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.socials__item:hover {
+    box-shadow: 0 0 7px #ffffff;
+}
+.socials__item:last-child {
+    margin-right: 0;
+}
+/*---------------------------Конец блока who-is---------------------------*/
+
+/*---------------------------Начало блока testimonials---------------------------*/
+.testimonials {
+    width: 100%;
+    background-color: #ffffff;
+}
+.testimonials__wrap {
+    padding: 69px 0 76px;
+}
+.testimonials__title {
+    color: #515f67;
+    font-family: 'Segoe UI Light', arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 29px;
+}
+.testimonials__title::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: 0;
+    width: 32px;
+    height: 26px;
+    background: url('../img/css_sprites.png') -77px -78px;
+}
+.testimonials__title::after {
+    display: block;
+    content: "";
+    width: 45px;
+    height: 2px;
+    background-color: #515f67;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.testimonials__text {
+    color: #515f67;
+    font-size: 28px;
+    font-family: 'Segoe UI Light', arial, sans-serif;
+    line-height: 50px;
+}
+.testimonials__author {
+    margin-top: 27px;
+    color: #4bcaff;
+    font-size: 14px;
+    font-weight: 700;
+}
+/*---------------------------Конец блока testimonials---------------------------*/
+
+/*---------------------------Начало блока contacts---------------------------*/
+.contacts {
+    max-width: 1920px;
+    background: url("../img/bckg03.jpg") center center no-repeat;
+}
+.contacts_wrap {
+    padding: 69px 0 80px;
+}
+.contacts__title {
+    color: #ffffff;
+    font-family: 'Segoe UI Light', arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    position: relative;
+}
+.contacts__title::after {
+    display: block;
+    content: "";
+    width: 45px;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.contacts__row {
+    width: 100%;
+}
+.contacts__info {
+    margin-top: 17px;
+}
+.contacts__info,
+.contacts__address {
+    width: 569px;
+    color: #ffffff;
+    /*font-family: "Segoe UI - Semi Bold";*/
+    font-size: 14px;
+    line-height: 24px;
+    float: right;
+}
+.contacts__name,
+.contacts__email {
+    float: left;
+    margin-bottom: 35px;
+}
+.contacts__label {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 6px;
+}
+.contacts__field-name,
+.contacts__field-email {
+    width: 470px;
+    height: 60px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-left: 15px;
+}
+.contacts__message {
+    width: 100%;
+}
+.contacts__field-message {
+    width: 100%;
+    height: 220px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Segoe UI', arial, sans-serif;
+    padding: 15px;
+}
+.contacts__submit {
+    width: 370px;
+    height: 60px;
+    background-color: #4bcaff;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 38px;
+}
+/*---------------------------Конец блока contacts---------------------------*/
