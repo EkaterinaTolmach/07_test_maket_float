@@ -93,6 +93,22 @@ body {
     background-color: #353f46;
     font-size: 16px;
 }
+.section-title {
+    font-family: 'Segoe UI Light', arial, sans-serif;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    position: relative;
+}
+.section-title::after {
+     display: block;
+     content: "";
+     width: 45px;
+     height: 2px;
+     position: absolute;
+     bottom: -5px;
+     left: 0;
+ }
+
 /*-----------------------Конец "Общие стили"------------------------*/
 
 /*-----------------------Начало Header------------------------*/
@@ -150,23 +166,93 @@ body {
 .top-nav__link:hover::after {
     width: 73%;
 }
-.active {
+.top-nav__link--active {
     color: #4bcaff;
     border: 2px solid #4bcaff;
 }
-.active:hover {
+.top-nav__link--active:hover {
     color: #ffffff;
     border: 2px solid #ffffff;
 }
-.active:hover::after {
+.top-nav__link--active:hover::after {
     display: none;
 }
+.header__top-nav--adapt {
+    display: none;
+}
+.burger__name,
+.burger {
+    display: none;
+}
+.burger {
+    position: relative;
+    width: 22px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.burger-line {
+    cursor: pointer;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+.burger-line:first-child {
+    top: 0;
+    transition: 0.2s;
+}
+.burger-line:nth-child(2) {
+    top: 40%;
+    /*transition: 0.2s;*/
+}
+.burger:hover .burger-line:nth-child(2),
+.burger__name:hover ~.burger .burger-line:nth-child(2) {
+    display: none;
+}
+.burger-line:last-child {
+    bottom: 0;
+    transition: 0.2s;
+}
+.burger:hover .burger-line:first-child,
+.burger__name:hover ~.burger .burger-line:first-child {
+    position: absolute;
+    top: 7px;
+    transform: rotate(45deg);
+    transition: 0.2s;
+}
+
+.burger:hover .burger-line:last-child,
+.burger__name:hover ~.burger .burger-line:last-child {
+    position: absolute;
+    top: 7px;
+    transform: rotate(-45deg);
+    transition: 0.2s;
+}
+.burger__name {
+    color: #ffffff;
+    font-size: .875rem;
+    vertical-align: middle;
+    padding-left: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.burger__name:hover {
+    color: #ffffff;
+}
+
+.burger__checkbox {
+    display: none;
+}
+
 /*-----------------------Конец Header------------------------*/
 
 /*---------------------------Начало блока banner---------------------------*/
 .banner {
     max-width: 1920px;
-    height: 800px;
+    /*height: 800px;*/
     background: url("../img/bckg01.jpg") center center no-repeat;
 }
 .banner__wrap {
@@ -185,8 +271,8 @@ body {
     background-color: rgba(53, 63, 70, 0.85);
     display: inline-block;
     line-height: 60px;
-    height: 65px;
-    padding: 0 18px;
+    /*height: 65px;*/
+    padding: 1px 18px 3px;
     /*vertical-align: middle;*/
 }
 .banner__title span:first-child {
@@ -204,34 +290,23 @@ body {
     color: #ffffff;
 }
 .services__title {
-    font-size: 1.875rem;
-    font-family: 'Segoe UI Light', arial, sans-serif;
-    text-transform: uppercase;
-    position: relative;
     margin-bottom: 44px;
 }
 .services__title::after {
-    display: block;
-    content: "";
-    width: 45px;
-    height: 2px;
     background-color: #ffffff;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
 }
 .service__item {
-    width: 260px;
+    width: 22.22%;
     float: left;
 }
 .service__item:first-child {
-    margin-right: 40px;
+    margin-right: 3.42%;
 }
 .service__item:nth-child(2) {
-    margin-right: 36px;
+    margin-right: 3.08%;
 }
 .service__item:nth-child(3) {
-    margin-right: 43px;
+    margin-right: 3.67%;
 }
 .service__item:last-child {
     margin-right: 0;
@@ -286,27 +361,30 @@ body {
 }
 .portfolio__title {
     color: #515f67;
-    font-family: 'Segoe UI Light', arial, sans-serif;
-    font-size: 1.875rem;
-    text-transform: uppercase;
-    position: relative;
     float: left;
-    /*width: 50%;*/
+    width: 25%;
     text-align: left;
-    margin-right: 40.68%;
+    /*margin-right: 4%;*/
+    margin-bottom: 86px;
+}
+.portfolio__labels {
+    float: right;
+    width: 75%;
+    margin-bottom: 82px;
+    text-align: right;
 }
 .portfolio__label {
-    float: left;
+    /*float: left;*/
     color: #515f67;
-    display: block;
+    display: inline-block;
     font-size: 0.875rem;
     font-weight: 700;
     text-transform: uppercase;
     padding: 4px 15px 3px 18px;
     border: 2px solid transparent;
-    margin-right: 15px;
+    margin-right: 1.28%;
     margin-top: 15px;
-    margin-bottom: 80px;
+
     cursor: pointer;
     transition: 0.3s;
 }
@@ -318,23 +396,17 @@ body {
     margin-right: 0;
 }
 .portfolio__title::after {
-    display: block;
-    content: "";
-    width: 45px;
-    height: 2px;
     background-color: #515f67;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
 }
+
 .portfolio__radio {
     display: none;
 }
-.portfolio__radio--all:checked ~ .portfolio__label--all,
-.portfolio__radio--panoramas:checked ~ .portfolio__label--panoramas,
-.portfolio__radio--portraits:checked ~ .portfolio__label--portraits,
-.portfolio__radio--macro:checked ~ .portfolio__label--macro,
-.portfolio__radio--journal:checked ~ .portfolio__label--journal {
+.portfolio__radio--all:checked ~.portfolio__labels .portfolio__label--all,
+.portfolio__radio--panoramas:checked ~.portfolio__labels .portfolio__label--panoramas,
+.portfolio__radio--portraits:checked ~.portfolio__labels .portfolio__label--portraits,
+.portfolio__radio--macro:checked ~.portfolio__labels .portfolio__label--macro,
+.portfolio__radio--journal:checked ~.portfolio__labels .portfolio__label--journal {
     color: #4bcaff;
     border: 2px solid #4bcaff;
 }
@@ -349,6 +421,8 @@ body {
     position: relative;
     float: left;
     margin: 0 30px 30px 0;
+    /*margin-right: 2.5%;*/
+    /*margin-bottom: 2.5%;*/
 }
 .portfolio__img::before {
     transition: 0.3s;
@@ -412,6 +486,20 @@ body {
 .portfolio__radio--journal:checked ~.journal-tab {
     display: block;
 }
+.portfolio__more-brn {
+    display: none;
+}
+.portfolio__more-brn {
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    background-color: #4bcaff;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 38px;
+}
 /*---------------------------Конец блока portfolio---------------------------*/
 
 /*---------------------------Начало блока default---------------------------*/
@@ -424,22 +512,11 @@ body {
 }
 .default__title {
     color: #ffffff;
-    font-family: 'Segoe UI Light', arial, sans-serif;
-    font-size: 1.875rem;
-    text-transform: uppercase;
-    position: relative;
     /*float: left;*/
     margin-bottom: 39px;
 }
 .default__title::after {
-    display: block;
-    content: "";
-    width: 45px;
-    height: 2px;
     background-color: #ffffff;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
 }
 .default__descr {
     max-width: 469px;
@@ -474,6 +551,11 @@ body {
 .default__video {
     float: right;
     margin-top: 11px;
+    max-width: 560px;
+}
+.default__video video {
+    max-width: 560px;
+    max-height: 313px;
 }
 /*---------------------------Конец блока default---------------------------*/
 
@@ -498,21 +580,10 @@ body {
 }
 .twitter__title {
     color: #ffffff;
-    font-size: 1.875rem;
-    text-transform: uppercase;
-    font-family: 'Segoe UI Light', arial, sans-serif;
-    position: relative;
     margin-bottom: 30px;
 }
 .twitter__title::after {
-    display: block;
-    content: "";
-    width: 45px;
-    height: 2px;
     background-color: #ffffff;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
 }
 .twitter__text {
     color: #ffffff;
@@ -544,28 +615,17 @@ body {
 /*---------------------------Начало блока who-is---------------------------*/
 .who-is {
     max-width: 1920px;
-    background: url("../img/bckg02.jpg") center center;
+    background: url("../img/bckg02.jpg") center center no-repeat;
 }
 .who-is__wrap {
     padding: 89px 0 169px;
 }
 .who-is__title {
     color: #ffffff;
-    font-family: 'Segoe UI Light', arial, sans-serif;
-    font-size: 1.875rem;
-    text-transform: uppercase;
-    position: relative;
     margin-bottom: 38px;
 }
 .who-is__title::after {
-    display: block;
-    content: "";
-    width: 45px;
-    height: 2px;
     background-color: #ffffff;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
 }
 .who-is__text {
 
@@ -580,6 +640,7 @@ body {
 .who-is__column:nth-child(3) {
     float: right;
     max-width: 48.7%;
+    margin-bottom: -10px;
 }
 .who-is__text:first-child {
     /*float: left;*/
@@ -610,6 +671,7 @@ body {
     margin-right: 20px;
     background-color: transparent;
     transition: 0.3s;
+    margin-bottom: 10px;
 }
 .bg-icon_coffee {
     display: block;
@@ -678,10 +740,6 @@ body {
 }
 .testimonials__title {
     color: #515f67;
-    font-family: 'Segoe UI Light', arial, sans-serif;
-    font-size: 1.875rem;
-    text-transform: uppercase;
-    position: relative;
     margin-bottom: 29px;
 }
 .testimonials__title::before {
@@ -695,14 +753,7 @@ body {
     background: url('../img/css_sprites.png') -77px -78px;
 }
 .testimonials__title::after {
-    display: block;
-    content: "";
-    width: 45px;
-    height: 2px;
     background-color: #515f67;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
 }
 .testimonials__text {
     color: #515f67;
@@ -728,21 +779,10 @@ body {
 }
 .contacts__title {
     color: #ffffff;
-    font-family: 'Segoe UI Light', arial, sans-serif;
-    font-size: 1.875rem;
-    text-transform: uppercase;
     margin-bottom: 40px;
-    position: relative;
 }
 .contacts__title::after {
-    display: block;
-    content: "";
-    width: 45px;
-    height: 2px;
     background-color: #ffffff;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
 }
 .contacts__row {
     width: 100%;
@@ -752,7 +792,7 @@ body {
 }
 .contacts__info,
 .contacts__address {
-    width: 569px;
+    width: 48.63%;
     color: #ffffff;
     /*font-family: "Segoe UI - Semi Bold";*/
     font-size: 0.875rem;
@@ -816,6 +856,8 @@ body {
     padding: 15px;
 }
 .contacts__submit {
+    cursor: pointer;
+    display: block;
     width: 370px;
     height: 60px;
     background-color: #4bcaff;
@@ -852,9 +894,13 @@ body {
     color: #515f67;
     padding: 4px 15px 3px 18px;
     position: relative;
+    transition: 0.3s;
 }
 .bottom-nav__link--first {
     padding: 4px 15px 3px 0;
+}
+.bottom-nav__link--last {
+    padding: 4px 0 3px 18px;
 }
 .bottom-nav__link::after {
     transition: 0.3s;
@@ -895,3 +941,323 @@ body {
     color: #515f67;
 }
 /*---------------------------Конец блока footer---------------------------*/
+
+/*---------------------------Начало стилей для адаптива---------------------------*/
+@media all and (max-width: 1170px) {
+    .template-width {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .portfolio__tab {
+        max-width: 870px;
+        margin: 0 auto;
+    }
+    .portfolio__img:nth-child(3),
+    .portfolio__img:nth-child(6) {
+        margin-right: 0;
+    }
+}
+@media all and (max-width: 1039px) {
+    .default__descr {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .default__video {
+        float: none;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .default__title,
+    .default__text {
+        text-align: left;
+    }
+}
+@media all and (max-width: 880px) {
+    .portfolio__tab {
+        max-width: 570px;
+        margin: 0 auto;
+    }
+    .portfolio__img:nth-child(3) {
+        margin-right: 30px;
+    }
+    .portfolio__img:nth-child(2),
+    .portfolio__img:nth-child(4) {
+        margin-right: 0;
+    }
+    .portfolio__img:nth-child(7),
+    .portfolio__img:nth-child(8) {
+        display: none;
+    }
+    .portfolio__more-brn {
+        display: block;
+    }
+}
+@media all and (max-width: 970px) {
+    .banner__title {
+        font-size: 2rem;
+    }
+    .banner__title span {
+        line-height: 49px;
+    }
+    .who-is__wrap {
+        padding: 59px 5px 98px
+    }
+    .contacts {
+        background: #515f67;
+    }
+    .contacts__row {
+        width: 470px;
+        margin: 0 auto;
+    }
+    .contacts__info {
+        margin-top: 0;
+    }
+    .contacts__info,
+    .contacts__address {
+        float: none;
+        width: 100%;
+    }
+    .contacts__name,
+    .contacts__email {
+        float: none;
+        width: 100%;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+    .contacts__message {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .contacts__field-message {
+        margin-bottom: 25px;
+    }
+    .contacts__submit {
+        margin: 0 auto;
+    }
+}
+@media all and (max-width: 771px) {
+    .banner__wrap {
+        padding: 373px 5px 258px;
+    }
+}
+@media all and (max-width: 768px) {
+    .service__item {
+        width: 46%;
+    }
+    .service__item:first-child,
+    .service__item:nth-child(2) {
+        margin-bottom: 20px;
+    }
+    .portfolio__title {
+        float: none;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .portfolio__labels {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .section__title {
+        text-align: center;
+    }
+    .section__title::after {
+        display: none;
+    }
+}
+@media all and (max-width: 700px) {
+    .header__logo {
+        float: none;
+    }
+    .header__top-nav {
+        float: none;
+        margin-top: 30px;
+    }
+    .top-nav {
+        text-align: center;
+    }
+    .header__wrap {
+        padding: 30px 5px 30px;
+        position: relative;
+    }
+    .twitter__text {
+        font-size: 1.5rem;
+        line-height: 38px;
+    }
+    .testimonials__text {
+        font-size: 1.5rem;
+        line-height: 38px;
+    }
+
+}
+@media all and (max-width: 660px) {
+    .who-is__wrap {
+        padding: 44px 5px 56px
+    }
+}
+@media all and (max-width: 579px) {
+    .portfolio__tab {
+        max-width: 270px;
+    }
+    .portfolio__img {
+        margin-right: 0;
+    }
+    .portfolio__img:nth-child(5),
+    .portfolio__img:nth-child(6) {
+        display: none;
+    }
+    .default__video {
+        max-width: 470px;
+    }
+    .default__video video {
+        max-width: 470px;
+        max-height: 263px;
+    }
+    .contacts__message {
+        width: 100%;
+    }
+}
+@media all and (max-width: 562px) {
+    .banner__wrap {
+        padding: 325px 5px 258px;
+    }
+    .who-is {
+        background: none;
+    }
+    .who-is__column:nth-child(2),
+    .who-is__column:nth-child(3) {
+        float: none;
+        max-width: 100%;
+    }
+    .who-is__text,
+    .who-is__text:first-child {
+        margin-bottom: 15px;
+    }
+    .who-is__socials-links {
+        margin-top: 0;
+    }
+    .socials__item {
+        margin-right: 15px;
+    }
+}
+@media all and (max-width: 520px) {
+    .header__logo {
+        float: left;
+    }
+    .top-nav {
+        display: none;
+    }
+    .header__top-nav {
+        float: right;
+        margin-top: 0;
+        position: relative;
+    }
+    .burger__name,
+    .burger {
+        display: inline-block;
+    }
+    .burger__checkbox:checked ~.burger .burger-line:first-child {
+        position: absolute;
+        top: 7px;
+        transform: rotate(45deg);
+        transition: 0.2s;
+    }
+
+    .burger__checkbox:checked ~.burger .burger-line:last-child {
+        position: absolute;
+        top: 7px;
+        transform: rotate(-45deg);
+        transition: 0.2s;
+    }
+    .burger__checkbox:checked ~.burger .burger-line:nth-child(2) {
+        display: none;
+    }
+    .burger__checkbox:checked ~.top-nav {
+        display: block;
+        position: absolute;
+        top: 57px;
+        right: -5px;
+        background-color: rgba(53, 63, 70, 0.85);
+        width: 150px;
+    }
+    .top-nav__item {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .top-nav__link--active {
+        border: none;
+        color: #ffffff;
+    }
+    .top-nav__link--active:hover {
+        border: none;
+    }
+    .top-nav__link:hover {
+        color: #4bcaff;
+    }
+    .top-nav__link:hover::after {
+        width: 0;
+    }
+}
+@media all and (max-width: 480px) {
+    .banner__wrap {
+        padding: 244px 5px 149px;
+    }
+    .banner__title {
+        font-size: 1.85rem;
+    }
+    .banner__title span {
+        line-height: 40px;
+    }
+    .default__video {
+        max-width: 310px;
+    }
+    .default__video video {
+        max-width: 310px;
+        max-height: 179px;
+    }
+    .contacts__row {
+        width: 100%;
+    }
+    .contacts__field-name,
+    .contacts__field-email {
+        width: 100%;
+    }
+}
+@media all and (max-width: 390px) {
+    .service__item {
+        float: none;
+        width: 100%;
+    }
+    .portfolio__label {
+        padding: 4px 10px 3px 10px;
+        margin-right: 0;
+    }
+    .contacts__submit {
+        width: 100%;
+    }
+    .footer__wrap {
+        padding: 45px 5px 45px;
+    }
+    .footer__nav,
+    .footer__copyright {
+        float: none;
+
+    }
+    .bottom-nav {
+        text-align: center;
+    }
+    .footer__copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+@media all and (max-width: 320px) {
+    .burger__checkbox:checked ~.top-nav {
+        width: 320px;
+        right: -5px;
+    }
+}
+/*---------------------------Конец стилей для адаптива---------------------------*/
