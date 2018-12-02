@@ -51,7 +51,7 @@ a {
 p {
     margin: 0;
 }
-button, input {
+button, input, textarea {
     outline: none;
     border: none;
 }
@@ -262,7 +262,7 @@ body {
 }
 .service__subtitle {
     color: #ffffff;
-    font-family: "Segoe UI - Semi Bold", arial, sans-serif;
+    font-family: "Segoe UI SemiBold", arial, sans-serif;
     font-size: 24px;
     line-height: 24px;
     text-transform: uppercase;
@@ -483,7 +483,7 @@ body {
     background-color: #4bcaff;
 }
 .twitter__wrap {
-    padding: 69px 0 64px;
+    padding: 69px 0 66px;
     position: relative;
 }
 .twitter__title::before {
@@ -522,7 +522,7 @@ body {
 }
 .twitter__link {
     color: #ffffff;
-    font-family: "Segoe UI - Semi Bold", arial, sans-serif;
+    font-family: "Segoe UI SemiBold", arial, sans-serif;
     position: relative;
 }
 .twitter__link::after {
@@ -808,3 +808,72 @@ body {
     margin-top: 38px;
 }
 /*---------------------------Конец блока contacts---------------------------*/
+
+/*---------------------------Начало блока footer---------------------------*/
+.footer {
+    width: 100%;
+    background-color: #353f46;
+}
+.footer__wrap {
+    padding: 75px 0 79px;
+    font-family: "Segoe UI SemiBold", arial, sans-serif;
+    text-transform: uppercase;
+}
+.footer__nav {
+    float: left;
+    line-height: 0;
+    font-size: 1px;
+}
+.bottom-nav__item {
+    display: inline-block;
+    line-height: normal;
+    font-size: 0.75rem;
+    position: relative;
+}
+.bottom-nav__link {
+    color: #515f67;
+    padding: 4px 15px 3px 18px;
+    position: relative;
+}
+.bottom-nav__link--first {
+    padding: 4px 15px 3px 0;
+}
+.bottom-nav__link::after {
+    transition: 0.3s;
+    display: block;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+.bottom-nav__link--first::after {
+    left: 0;
+}
+.bottom-nav__link:hover {
+    color: #ffffff;
+}
+.bottom-nav__link:hover::after {
+    width: 70%;
+}
+.bottom-nav__item::after {
+    display: block;
+    content: "";
+    height: 13px;
+    width: 1px;
+    position: absolute;
+    background-color: #515f67;
+    right: 0;
+    top: 2px;
+}
+.bottom-nav__item:last-child::after {
+    display: none;
+}
+.footer__copyright {
+    float: right;
+    font-size: 0.75rem;
+    color: #515f67;
+}
+/*---------------------------Конец блока footer---------------------------*/
